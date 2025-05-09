@@ -27,6 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Research Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
@@ -57,7 +58,7 @@
                         I wish I can boost the development of medicine from another aspect with my multi-disciplinary background.
                         Considered myself as "full-stack" biomedical data scientist with 5 years of experience in biostatistics, computer science, and bioinformatics.
                         I am currently a PhD candidate in Biostatistics at UTHealth School of Public Health, and working jointly as a GRA in MD Anderson biostatistics
-                        and Clinical Cancer Prevention Department.
+                        and Clinical Cancer Prevention Department. Looking for a full-time position in biomedical data science and machine learning.
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/chunhui-gu-60b524177/"><i class="fab fa-linkedin-in"></i></a>
@@ -70,12 +71,56 @@
                 </div>
             </section>
 
+            <!-- Portfolio-->
+            <section class="resume-section" id="portfolio">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Portfolio</h2>
+                    <div class="row">
+                        <!-- Project 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="assets/img/MCED.png" alt="Project 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Multi-early cancer detection calculator</h5>
+                                    <p class="card-text">This is a web application to simulate the performance of a multi-cancer early detection 
+                                    test in reducing late-stage cancer incidence under different scenarios.</p>
+                                    <a href="https://chunhuigu.shinyapps.io/simulate_slip_rate/" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="assets/img/grapepi.png" alt="Project 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">GrapePi: Graph Neural Networks for Protein Identification</h5>
+                                    <p class="card-text">A comprehensive graph deep learning framework and CLI software for enhancing mass spectrometry proteomics protein detection with protein-protein interaction information.</p>
+                                    <a href="https://github.com/FDUguchunhui/GrapePi" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Linux Server bioinformatics pipeline</h5>
+                                    <p class="card-text">A comprehensive pipeline searching PTM using DIANN on a Linux server in batch mode, data aggregation, and quality control.</p>
+                                    <a href="https://github.com/FDUguchunhui/diann_script" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>
-                        I am keen on adapting advanced statistical and computer science techniques, as well as devising novel computational statistical methods, to address challenges in biology and medicine.
+                        I am keen on adapting advanced statistical and computer science techniques, as well as devising novel computational statistical methods, to address challenges in biomedicine.
                     </p>
                 </div>
             </section>
@@ -87,7 +132,25 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
                     
-                    <!-- Experience 1-->
+                    <!-- Experience 1 (Novo Nordisk) -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Data Scientist Intern</h3>
+                            <div class="subheading mb-6">Novo Nordisk, Plainsboro, New Jersey, USA</div>
+                            <article>
+                                <ul>
+                                    <li>Drafted study protocol for testing impact of different settings of time-zero (start of follow-up) in target trial emulation longitudinal study focusing on chronic diseases without active comparator.</li>
+                                    <li>Developed validation study to justify or disprove proposed time-zero settings by adapting previous active-user comparator RWE studies into non-user comparator design and compared results with well-studied treatment effects.</li>
+                                    <li>Performed data extraction from large RWE database (Optum Clinformatics Data Mart) using SQL and R, dplyr, and data harmonization for creating cohorts using different time-zero settings.</li>
+                                    <li>Assessed performance of different settings of time-zero using survival analysis models (Cox model).</li>
+                                    <li>Automated cohort creation pipeline and created Shiny app/user-friendly R package for selection and visualization.</li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2024 - August 2024</span></div>
+                    </div>
+
+                    <!-- Experience 2-->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Graduate Research Assistant</h3>
@@ -133,62 +196,11 @@
                         <div class="flex-shrink-0"><span class="text-primary">July 2022 - Current</span></div>
                     </div>
 
-                    <!-- Experience 2-->
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Graduate Research Assistant</h3>
-                            <div class="subheading mb-6">Texas Institute for Restorative Neurotechnologies</div>
-                            <div class="subheading mb-3">Advisor: Prof. Guoqiang Zhang, Ph.D.</div>
-                            <article>
-                                <section>
-                                    <div style="font-weight:bold"><a href=propensity.pdf>A review of propensity-score matching method in studies that exploring factors associated with COVID-severity</a></div>
-                                    <ul>
-                                        <li>Reviewed use of propensity-score matching method in selected papers</li>
-                                        <li>Generalized commonly used propensity-score models, matching strategies, and covariates used in this topic</li>
-                                        <li>Summarized shortcomings in using propensity-score matching in this topic </li>
-                                    </ul>
-                                </section>
-            
-                                <br>
-            
-                                <sectio>
-                                    <div style="font-weight:bold">Studied how to query through MongoDB database and explore the effect of hydroxychloroquine in treating COVID-19 by propensity-score matching analysis </div>
-                                    <ul>
-                                        <li>Performed basic MongoDB operations, aggregation framework, improving MongoDB performance, MongoDB Python developer, and MongoDB diagnostics and debugging</li>
-                                        <li>Studied theory and application of propensity-score methods in covariate selection, missing imputation, propensity-score model selection, diagnostics, and analysis</li>
-                                        <li>Reviewed published papers in exploring effect of hydroxychloroquine in treating COVID-19</li>
-                                        <li>Two curriculum projects were done for practice purposes:
-                                            <ul>
-                                                <li><b>Stochastic process I:</b> <a href=Stochastic.pdf>Comparing the length of stay of COVID-19 patients receiving and not receiving hydroxychloroquine treatment using discrete-time Markov chain</a></li>
-                                                <li><b>Multivariate analysis:</b> <a href=multivariate.pdf>Estimating the effect of preventative use of hydroxychloroquine and interaction between age in four severity biomarkers after COVID infection</a></li>
-                                              </ul>
-                                        </li>
-                                    </ul>
-                                </sectio>
-                                
-                                <br>
-
-                                <section>
-                                    <div style="font-weight:bold">Does Cancer History Drive COVID-19 Outcome? A Large-scale Matched Cohort Analysis</div>
-                                    <ul>
-                                        <li>Debugged SAS code from other biostatisticians</li>
-                                        <li>Translated SAS code into R code to test the compatibility of R and SAS in our routine analyses</li>
-                                        <li>Developed R in-house packages to automate analysis pipeline </li>
-                                        <li>Offered additional expertise from clinical medicine and biostatistics perspective in topic development and modeling</li>
-                                    </ul>
-                                </section>
-
-                            </article>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2020 - May 2022</span></div>
-                    </div>
-
-
                     <!-- Experience 3-->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Assistant Bioinformatics Analyst</h3>
-                            <div class="subheading mb-6">Children’s Hospital of Atlanta</div>
+                            <div class="subheading mb-6">Children's Hospital of Atlanta</div>
                             <div class="subheading mb-3">Advisor: Prof. Rabindra M Tirouvanziam, Ph.D.</div>
                             <article>
                                 <ul>
@@ -309,7 +321,7 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Excellent Volunteer of Shanghai Children’s Museum 2014
+                            Excellent Volunteer of Shanghai Children's Museum 2014
                         </li>
                     </ul>
                 </div>
@@ -320,7 +332,8 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publications</h2>
                     <div>
-                        <p><a>Gu, C., Cai, Y., Hsiao, F.-C., Dennison, J., Vykoukal, J., Farhmann, J., Do, K.-A., Ajani, J. A., Katayama, H., Irajizad, E., & Hanash, S. (Addressing reviews). In-depth proteomic profiling of gastric cancer tumor cells uncovers previously unidentified cancer testis antigens. Cells.</a></p>
+                        <p><a href="https://academic.oup.com/bioinformaticsadvances/advance-article/doi/10.1093/bioadv/vbaf095/8120414">Gu, C., Ghasemi, S. M., Cai, Y., Fahrmann, J. F., Long, J. P., Katayama, H., Wu, C., Vy-koukal, J., Dennison, J. B., Hanash, S., Do, K.-A., and Irajizad, E. (2025). Grape-Pi: Graph-Based Neural Networks for Enhanced Protein Identification in Proteomics Pipelines. Bioinformatics Advances.</a></p>
+                        <p><a href="https://aacrjournals.org/cancerpreventionresearch/article-abstract/18/3/117/751974/A-Novel-Sensitivity-Maximization-at-a-Given?redirectedFrom=fulltext">Ghasemi, S., Gu, C., Fahrmann Hanash S., Do, K., Long, J., and Irajizad, E. (2024). A Novel Sensitivity Maximization at a Given Specificity Method for Binary Classifications. Cancer Prevention Research</a></p>
                         <p><a href=https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267584>Kim, Y., Zhu, L., Zhu, H., Li, X., Huang, Y., Gu, C., Bush, H., Chung, C., & Zhang, G.-Q. (2022). Characterizing cancer and COVID-19 outcomes using electronic health records. PLoS One, 17(5). https://doi.org/10.1371/journal.pone.0267584</a></p>
                         <p><a href=https://www.sciencedirect.com/science/article/pii/S2666379121000550?via%3Dihub>Margaroli C, Moncada-Giraldo D, Gulick DA, Dobosh B, Giacalone VD, Forrest OA, Sun F, <b>Gu C</b>, Gaggar A, Kissick H, Wu R, Gibson G, Tirouvanziam R. Transcriptional firing represses bactericidal activity in cystic fibrosis airway neutrophils. Cell Rep Med. 2021 Apr 8;2(4):100239. doi: 10.1016/j.xcrm.2021.100239. PMID: 33948572; PMCID: PMC8080108.</a></p>
                         <p><a href=https://pubmed.ncbi.nlm.nih.gov/33954428/>Tilton, C., Elizabeth, M., Johnson, S., Chen, Z., <b>Gu, C.</b>, Robichaux, C., Metzger, N.Evaluation of a risk assessment model to predict infection with healthcare facility-onset Clostridioides difficile infection. Available at: https://pubmed.ncbi.nlm.nih.gov/33954428/</a></p>
@@ -357,7 +370,6 @@
                         <li><a href="https://coursera.org/share/e92774f1995877dfc3336a9d0eb55952" target="_blank">Bayesian Statistics: Techniques and Models|University of California, Santa Cruz</a></li>
                         <li><a href="https://coursera.org/share/dfa6f5fb405959e7cb04b55625bfb835" target="_blank">Practical Time Series Analysis|The State University of New York</a></li>
                         <li>18.06 Linear Algebra (Spring 2010) | Gilbert Strang, Massachusetts Insistute of Technology</li>
-                        <li>6.042J/18.062J Mathematics for Computer Science (Fall 2010) <span style="color:red">in progress</span>| Massachusetts Insistute of Technology</li>
                         <br>
                         <h5 class="mb-6">Computer Science</h5>
                         <li><a target="_blank">CS 7643 Deep Learning|Georgia Technology Institute</a></li>
